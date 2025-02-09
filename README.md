@@ -115,9 +115,6 @@ Fflix - Free HD movies
             With a user-friendly interface, high-quality streaming, and a constantly updated content library, 
             Fflix is your go-to destination for non-stop entertainment. Whether you're in the mood for a blockbuster, a hidden gem,
             or a binge-worthy series, Fflix delivers an immersive viewing experience tailored to your preferences.
-        </p>
-        <img class="Tv-show" src="https://raw.githubusercontent.com/Prince200906/README.md/main/images/movie2.jpg" alt="Movie 2">
-        <img 
 
     <!-- Movie Collection Section -->
     <div class="section">
@@ -145,5 +142,4 @@ Fflix - Free HD movies
         <img src="https://raw.githubusercontent.com/Prince200906/README.md/main/images/tvshow4.jpg" alt="TV Show 4">
     </div>
 
-</body>
-</html>
+PRINCE CELMAR 10-SR
