@@ -126,36 +126,75 @@ Fflix - Free HD movies
         </p>
     </div>
 
-          <h2>Latest Movies</h2>
-    <div class="gallery">
-        <img
-import openai
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Posters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: white;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .movie {
+            width: 200px;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .movie-title {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie Gallery</h1>
+    <div class="gallery" id="movieGallery"></div>
 
-# Set up the OpenAI API key
-openai.api_key = 'your-openai-api-key'
+    <script>
+        const movies = [
+            { title: "Inception", img: "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg" },
+            { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" },
+            { title: "The Dark Knight", img: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" },
+            { title: "Avengers: Endgame", img: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" },
+            { title: "Titanic", img: "https://image.tmdb.org/t/p/w500/kHXEpyfl6zqn8a6YuozZUujufXf.jpg" }
+        ];
 
-# Function to generate an image based on a prompt
-def generate_image(prompt):
-    response = openai.Image.create(
-        prompt=prompt,
-        n=1,
-        size="1024x1024"
-    )
-    return response['data'][0]['url']
+        const gallery = document.getElementById("movieGallery");
 
-# Define the prompt for the images
-prompts = [
-    "A futuristic sci-fi city at night, glowing with neon lights and towering skyscrapers, depicting a bustling metropolis with flying cars.",
-    "A group of adventurers standing on a cliff overlooking a vast jungle with an ancient temple in the distance, showcasing a sense of mystery and discovery.",
-    "A medieval fantasy battle scene with knights in shining armor clashing with mythical creatures in a lush, green forest. The setting is dramatic, filled with action and high fantasy elements."
-]
+        movies.forEach(movie => {
+            const movieDiv = document.createElement("div");
+            movieDiv.classList.add("movie");
 
-# Generate images based on the prompts
-image_urls = [generate_image(prompt) for prompt in prompts]
+            const img = document.createElement("img");
+            img.src = movie.img;
+            img.alt = movie.title;
 
-# Display the generated URLs
-for idx, url in enumerate(image_urls, 1):
-    print(f"Image {idx}: {url}")
+            const title = document.createElement("div");
+            title.classList.add("movie-title");
+            title.textContent = movie.title;
+
+            movieDiv.appendChild(img);
+            movieDiv.appendChild(title);
+            gallery.appendChild(movieDiv);
+        });
+    </script>
+</body>
+</html>
+
 
 
 PRINCE CELMAR 10-SR
