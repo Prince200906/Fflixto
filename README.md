@@ -128,18 +128,145 @@ Fflix - Free HD movies
 
           <h2>Latest Movies</h2>
     <div class="gallery">
-        <img src="https://raw.githubusercontent.com/YOUR_USERNAME/README.md/main/images/movie1.jpg" alt="Movie 1">
-        <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/images/movie2.jpg" alt="Movie 2">
-        <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/images/movie3.jpg" alt="Movie 3">
-        <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/images/movie4.jpg" alt="Movie 4">
+        <img
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Movies</title>
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #movies-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .movie-card {
+            background-color: white;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .movie-card .movie-info {
+            padding: 15px;
+        }
+
+        .movie-card .movie-info h3 {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+        }
+
+        .movie-card .movie-info p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Latest Movies</h1>
+    </header>
+
+    <div id="movies-container">
+        <!-- Movies will be displayed here dynamically -->
     </div>
 
-    <h2>Popular TV Shows</h2>
-    <div class="gallery">
-        <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/images/tvshow1.jpg" alt="TV Show 1">
-        <img src="https://raw.githubusercontent.com/Prinfe200906/README.md/main/images/tvshow2.jpg" alt="TV Show 2">
-        <img src="https://raw.githubusercontent.com/Prince200906/README.md/main/images/tvshow3.jpg" alt="TV Show 3">
-        <img src="https://raw.githubusercontent.com/Prince200906/README.md/main/images/tvshow4.jpg" alt="TV Show 4">
-    </div>
+    <footer>
+        <p>&copy; 2025 Movie Project | <a href="https://www.themoviedb.org/" target="_blank" style="color: white;">Powered by TMDb</a></p>
+    </footer>
+
+    <script>
+        // Replace with your own TMDb API key
+        const apiKey = 'YOUR_TMDB_API_KEY';  
+        const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+
+        async function fetchLatestMovies() {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                if (data.results) {
+                    displayMovies(data.results);
+                } else {
+                    alert('No movies found.');
+                }
+            } catch (error) {
+                console.error('Error fetching movies:', error);
+                alert('An error occurred while fetching movies.');
+            }
+        }
+
+        function displayMovies(movies) {
+            const container = document.getElementById('movies-container');
+            container.innerHTML = '';  // Clear any existing content
+
+            movies.forEach(movie => {
+                const movieCard = document.createElement('div');
+                movieCard.classList.add('movie-card');
+
+                const movieImage = movie.poster_path 
+                    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                    : 'https://via.placeholder.com/500x750.png?text=No+Image+Available';  // Fallback if no image
+
+                movieCard.innerHTML = `
+                    <img src="${movieImage}" alt="${movie.title}">
+                    <div class="movie-info">
+                        <h3>${movie.title}</h3>
+                        <p>${movie.release_date}</p>
+                    </div>
+                `;
+
+                container.appendChild(movieCard);
+            });
+        }
+
+        // Initialize the fetch when the page loads
+        window.onload = fetchLatestMovies;
+    </script>
 
 PRINCE CELMAR 10-SR
