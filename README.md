@@ -129,144 +129,33 @@ Fflix - Free HD movies
           <h2>Latest Movies</h2>
     <div class="gallery">
         <img
-<html lang="en">
+import openai
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest Movies</title>
-    <style>
-        /* Basic styles for the page */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
+# Set up the OpenAI API key
+openai.api_key = 'your-openai-api-key'
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+# Function to generate an image based on a prompt
+def generate_image(prompt):
+    response = openai.Image.create(
+        prompt=prompt,
+        n=1,
+        size="1024x1024"
+    )
+    return response['data'][0]['url']
 
-        #movies-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-            justify-content: center;
-        }
+# Define the prompt for the images
+prompts = [
+    "A futuristic sci-fi city at night, glowing with neon lights and towering skyscrapers, depicting a bustling metropolis with flying cars.",
+    "A group of adventurers standing on a cliff overlooking a vast jungle with an ancient temple in the distance, showcasing a sense of mystery and discovery.",
+    "A medieval fantasy battle scene with knights in shining armor clashing with mythical creatures in a lush, green forest. The setting is dramatic, filled with action and high fantasy elements."
+]
 
-        .movie-card {
-            background-color: white;
-            border-radius: 8px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
+# Generate images based on the prompts
+image_urls = [generate_image(prompt) for prompt in prompts]
 
-        .movie-card:hover {
-            transform: scale(1.05);
-        }
+# Display the generated URLs
+for idx, url in enumerate(image_urls, 1):
+    print(f"Image {idx}: {url}")
 
-        .movie-card img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-        }
-
-        .movie-card .movie-info {
-            padding: 15px;
-        }
-
-        .movie-card .movie-info h3 {
-            font-size: 18px;
-            margin: 0;
-            color: #333;
-        }
-
-        .movie-card .movie-info p {
-            font-size: 14px;
-            color: #555;
-            margin-top: 8px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>Latest Movies</h1>
-    </header>
-
-    <div id="movies-container">
-        <!-- Movies will be displayed here dynamically -->
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Movie Project | <a href="https://www.themoviedb.org/" target="_blank" style="color: white;">Powered by TMDb</a></p>
-    </footer>
-
-    <script>
-        // Replace with your own TMDb API key
-        const apiKey = 'YOUR_TMDB_API_KEY';  
-        const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
-
-        async function fetchLatestMovies() {
-            try {
-                const response = await fetch(apiUrl);
-                const data = await response.json();
-
-                if (data.results) {
-                    displayMovies(data.results);
-                } else {
-                    alert('No movies found.');
-                }
-            } catch (error) {
-                console.error('Error fetching movies:', error);
-                alert('An error occurred while fetching movies.');
-            }
-        }
-
-        function displayMovies(movies) {
-            const container = document.getElementById('movies-container');
-            container.innerHTML = '';  // Clear any existing content
-
-            movies.forEach(movie => {
-                const movieCard = document.createElement('div');
-                movieCard.classList.add('movie-card');
-
-                const movieImage = movie.poster_path 
-                    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-                    : 'https://via.placeholder.com/500x750.png?text=No+Image+Available';  // Fallback if no image
-
-                movieCard.innerHTML = `
-                    <img src="${movieImage}" alt="${movie.title}">
-                    <div class="movie-info">
-                        <h3>${movie.title}</h3>
-                        <p>${movie.release_date}</p>
-                    </div>
-                `;
-
-                container.appendChild(movieCard);
-            });
-        }
-
-        // Initialize the fetch when the page loads
-        window.onload = fetchLatestMovies;
-    </script>
 
 PRINCE CELMAR 10-SR
