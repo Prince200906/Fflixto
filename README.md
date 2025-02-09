@@ -125,8 +125,6 @@ Fflix - Free HD movies
             Whether you’re in the mood for a recent release or a timeless classic, Fflix offers a diverse range of options, all available in stunning HD quality.
         </p>
     </div>
-
-    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -167,10 +165,10 @@ Fflix - Free HD movies
     <script>
         const movies = [
             { title: "Inception", img: "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg" },
-            { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" },
+            { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" }, <!-- Fixed Link -->
             { title: "The Dark Knight", img: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" },
             { title: "Avengers: Endgame", img: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" },
-            { title: "Titanic", img: "https://image.tmdb.org/t/p/w500/kHXEpyfl6zqn8a6YuozZUujufXf.jpg" }
+            { title: "Titanic", img: "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" } <!-- Fixed Link -->
         ];
 
         const gallery = document.getElementById("movieGallery");
@@ -194,6 +192,8 @@ Fflix - Free HD movies
     </script>
 </body>
 </html>
+
+
 
 
 
