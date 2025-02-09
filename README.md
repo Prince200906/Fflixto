@@ -116,8 +116,8 @@ Fflix - Free HD movies
             Fflix is your go-to destination for non-stop entertainment. Whether you're in the mood for a blockbuster, a hidden gem,
             or a binge-worthy series, Fflix delivers an immersive viewing experience tailored to your preferences.
 
-    <!-- Movie Collection Section -->
-       <div class="section">
+ <!-- Movie Collection Section -->
+    <div class="section">
 <h2>Watch Fflix Movies Free Online HD</h2>
         <p class="italic">Extensive HD Movie Library</p>
         <p>
@@ -165,7 +165,7 @@ Fflix - Free HD movies
     <script>
         const movies = [
             { title: "The Matrix", img: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" }, // Replacing Inception
-            { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/z4x0Bp48ar3Mda8KiPD1vwSY3D8.jpg" }, // Fixed Interstellar
+             { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" }, // Fixed Interstellar
             { title: "The Dark Knight", img: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" },
             { title: "Avengers: Endgame", img: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" },
             { title: "Titanic", img: "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" }
