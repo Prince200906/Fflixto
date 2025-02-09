@@ -117,11 +117,11 @@ Fflix - Free HD movies
             or a binge-worthy series, Fflix delivers an immersive viewing experience tailored to your preferences.
 
     <!-- Movie Collection Section -->
-    <div class="section">
-        <h2>Watch Fflix Movies Free Online HD</h2>
+       <div class="section">
+<h2>Watch Fflix Movies Free Online HD</h2>
         <p class="italic">Extensive HD Movie Library</p>
         <p>
-            Fflix provides a vast collection of high-definition movies across all genres, from thrilling blockbusters to heartwarming dramas. 
+         Fflix provides a vast collection of high-definition movies across all genres, from thrilling blockbusters to heartwarming dramas. 
             Whether you’re in the mood for a recent release or a timeless classic, Fflix offers a diverse range of options, all available in stunning HD quality.
         </p>
     </div>
@@ -164,11 +164,11 @@ Fflix - Free HD movies
 
     <script>
         const movies = [
-            { title: "Inception", img: "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg" },
-            { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" }, <!-- Fixed Link -->
+            { title: "The Matrix", img: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" }, // Replacing Inception
+            { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/z4x0Bp48ar3Mda8KiPD1vwSY3D8.jpg" }, // Fixed Interstellar
             { title: "The Dark Knight", img: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" },
             { title: "Avengers: Endgame", img: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" },
-            { title: "Titanic", img: "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" } <!-- Fixed Link -->
+            { title: "Titanic", img: "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" }
         ];
 
         const gallery = document.getElementById("movieGallery");
