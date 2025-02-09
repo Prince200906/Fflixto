@@ -1,4 +1,4 @@
-<!FFlixto>
+<!Fflixto>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -106,12 +106,12 @@
 
     <!-- Movie Gallery -->
     <div class="gallery">
-        <img src="https://via.placeholder.com/150x220?text=Movie+1" alt="Movie 1">
-        <img src="https://via.placeholder.com/150x220?text=Movie+2" alt="Movie 2">
-        <img src="https://via.placeholder.com/150x220?text=Movie+3" alt="Movie 3">
-        <img src="https://via.placeholder.com/150x220?text=Movie+4" alt="Movie 4">
-        <img src="https://via.placeholder.com/150x220?text=Movie+5" alt="Movie 5">
-        <img src="https://via.placeholder.com/150x220?text=Movie+6" alt="Movie 6">
+        <img src="https://m.media-amazon.com/images/I/81dQDEtsCrL._AC_SY679_.jpg" alt="Interstellar">
+        <img src="https://m.media-amazon.com/images/I/91zsqfSZtZL._AC_SY679_.jpg" alt="The Dark Knight">
+        <img src="https://m.media-amazon.com/images/I/81eEofJOF3L._AC_SY679_.jpg" alt="Inception">
+        <img src="https://m.media-amazon.com/images/I/91h+H4b3GHL._AC_SY679_.jpg" alt="Avengers Endgame">
+        <img src="https://m.media-amazon.com/images/I/71NiXPjXOiL._AC_SY679_.jpg" alt="Joker">
+        <img src="https://m.media-amazon.com/images/I/81lx1ON0+yL._AC_SY679_.jpg" alt="John Wick 4">
     </div>
 
 </body>
