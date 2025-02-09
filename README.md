@@ -125,7 +125,6 @@ Fflix - Free HD movies
             Whether you’re in the mood for a recent release or a timeless classic, Fflix offers a diverse range of options, all available in stunning HD quality.
         </p>
     </div>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
