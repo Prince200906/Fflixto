@@ -63,8 +63,8 @@ Fflix - Enjoy free HD movies
             border-radius: 8px;
             margin-top: 15px;
         }
-
-        /* Movie Gallery */
+         
+         /* Movie Gallery */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -83,7 +83,6 @@ Fflix - Enjoy free HD movies
         .gallery img:hover {
             transform: scale(1.05);
         }
-
         /* Responsive */
         @media (max-width: 600px) {
             .section h2 {
@@ -96,12 +95,11 @@ Fflix - Enjoy free HD movies
     </style>
 </head>
 <body>
-
-    <!-- Header -->
+   <!-- Header -->
     <div class="header">
         <h1><span>Fflix</span> - Watch Free Movies & TV Shows</h1>
-    </div>
- <!-- About Section -->
+    </div> 
+    <!-- About Section -->
     <div class="section">
         <h2>What Is Fflix?</h2>
         <p>
