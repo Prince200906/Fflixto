@@ -1,9 +1,9 @@
-Fflix - Free HD movies
+Fflix - Enjoy free HD movies
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fflix - Watch Free Movies & TV Shows</title>
+    <title>Fflix - Watch Free Movies & TV Shows now </title>
     <style>
         /* Global Styles */
         body {
@@ -101,8 +101,7 @@ Fflix - Free HD movies
     <div class="header">
         <h1><span>Fflix</span> - Watch Free Movies & TV Shows</h1>
     </div>
-
-    <!-- About Section -->
+ <!-- About Section -->
     <div class="section">
         <h2>What Is Fflix?</h2>
         <p>
@@ -118,7 +117,6 @@ Fflix - Free HD movies
         <p class="italic">Extensive HD Movie Library</p>
         <p>
          Fflix provides a vast collection of high-definition movies across all genres, from thrilling blockbusters to heartwarming dramas. 
-            Whether you’re in the mood for a recent release or a timeless classic, Fflix offers a diverse range of options, all available in stunning HD quality.
         </p>
     </div>
 <html lang="en">
