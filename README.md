@@ -109,16 +109,6 @@ Fflix - Enjoy free HD movies
             Designed for viewers who value 
             convenience and quality, Fflix allows users to enjoy the latest Hollywood hits and beloved classics
             without the need for sign-ups or subscriptions.
-        </p>
-        <p>
- <!-- Movie Collection Section -->
-    <div class="section">
-<h2>Watch Fflix Movies Free Online HD</h2>
-        <p class="italic">Extensive HD Movie Library</p>
-        <p>
-         Fflix provides a vast collection of high-definition movies across all genres, from thrilling blockbusters to heartwarming dramas. 
-        </p>
-    </div>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
