@@ -14,43 +14,36 @@ Fflix - Enjoy free HD movies
             padding: 0;
             text-align: center;
         }
-
-        /* Header */
+         /* Header */
         .header {
             background-color: black;
             padding: 15px;
             text-align: center;
         }
-
-        .header h1 {
-            font-size: 32px;
+           .header h1 {
+            font-size: 30px;
             font-weight: bold;
         }
-
-        .header span {
+         .header span {
             color: red;
         }
-
-        /* Section Styling */
+         /* Section Styling */
         .section {
             padding: 30px 20px;
             max-width: 900px;
             margin: auto;
             text-align: left;
         }
-
-        .section h2 {
-            font-size: 26px;
+            .section h2 {
+            font-size: 24px;
             font-weight: bold;
         }
-
-        .section p {
-            font-size: 16px;
+          .section p {
+            font-size: 14px;
             line-height: 1.6;
             color: #cccccc;
         }
-
-        .italic {
+           .italic {
             font-style: italic;
             font-weight: bold;
             color: lightgray;
@@ -97,7 +90,7 @@ Fflix - Enjoy free HD movies
 <body>
    <!-- Header -->
     <div class="header">
-        <h1><span>Fflix</span> - Watch Free Movies & TV Shows</h1>
+        <h1><span>Fflix</span> - Watch Free Movies & TV Shows now </h1>
     </div> 
     <!-- About Section -->
     <div class="section">
@@ -123,19 +116,19 @@ Fflix - Enjoy free HD movies
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 10px;
+            margin-top: 15px;
         }
         .movie {
-            width: 200px;
+            width: 150px;
         }
         .movie img {
-            width: 100%;
-            border-radius: 10px;
+            width: 80%;
+            border-radius: 8px;
         }
         .movie-title {
             margin-top: 10px;
-            font-size: 16px;
+            font-size: 14px;
         }
     </style>
 </head>
