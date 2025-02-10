@@ -112,10 +112,6 @@ Fflix - Free HD movies
             without the need for sign-ups or subscriptions.
         </p>
         <p>
-            With a user-friendly interface, high-quality streaming, and a constantly updated content library, 
-            Fflix is your go-to destination for non-stop entertainment. Whether you're in the mood for a blockbuster, a hidden gem,
-            or a binge-worthy series, Fflix delivers an immersive viewing experience tailored to your preferences.
-
  <!-- Movie Collection Section -->
     <div class="section">
 <h2>Watch Fflix Movies Free Online HD</h2>
@@ -160,14 +156,11 @@ Fflix - Free HD movies
 <body>
     <h1>Movie Gallery</h1>
     <div class="gallery" id="movieGallery"></div>
-
-    <script>
+        <script>
         const movies = [
             { title: "The Matrix", img: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" }, // Replacing Inception
              { title: "Interstellar", img: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" }, // Fixed Interstellar
             { title: "The Dark Knight", img: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" },
-            { title: "Avengers: Endgame", img: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" },
-            { title: "Titanic", img: "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" }
         ];
 
         const gallery = document.getElementById("movieGallery");
