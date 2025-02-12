@@ -30,7 +30,7 @@ Fflix - Enjoy free HD movies
          /* Section Styling */
         .section {
             padding: 30px 20px;
-            max-width: 800px;
+            max-width: 950px;
             margin: auto;
             text-align: left;
         }
