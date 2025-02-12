@@ -94,9 +94,7 @@ Fflix - Enjoy free HD movies
     <!-- About Section -->
     <div class="section">
         <h2>What Is Fflix?</h2>
-         Fflix is a free online streaming platform offering an extensive selection of movies and TV shows across various genres. 
-            Designed for viewers who value 
-            convenience and quality, without the need for sign-ups or subscriptions.
+ Fflix is a free online streaming platform offering an extensive selection of movies and TV shows across various genres. Designed for viewers who value convenience and quality, without the need for sign-ups or subscriptions.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
