@@ -115,11 +115,11 @@ Fflix - Enjoy free HD movies
             margin-top: 15px;
         }
         .movie {
-            width: 120px;
+            width: 90px;
         }
         .movie img {
-            width: 50%;
-            border-radius: 6px;
+            width: 30%;
+            border-radius: 4px;
         }
         .movie-title {
             margin-top: 10px;
