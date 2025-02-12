@@ -98,8 +98,7 @@ Fflix - Enjoy free HD movies
         <p>
             Fflix is a free online streaming platform offering an extensive selection of movies and TV shows across various genres. 
             Designed for viewers who value 
-            convenience and quality, Fflix allows users to enjoy the latest Hollywood hits and beloved classics
-            without the need for sign-ups or subscriptions.
+            convenience and quality, without the need for sign-ups or subscriptions.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -163,9 +162,3 @@ Fflix - Enjoy free HD movies
     </script>
 </body>
 </html>
-
-
-
-
-
-PRINCE CELMAR 10-SR
