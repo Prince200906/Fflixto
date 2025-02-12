@@ -119,7 +119,7 @@ Fflix - Enjoy free HD movies
         }
         .movie img {
             width: 40%;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         .movie-title {
             margin-top: 10px;
