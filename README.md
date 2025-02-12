@@ -30,7 +30,7 @@ Fflix - Enjoy free HD movies
          /* Section Styling */
         .section {
             padding: 30px 20px;
-            max-width: 900px;
+            max-width: 800px;
             margin: auto;
             text-align: left;
         }
@@ -85,18 +85,16 @@ Fflix - Enjoy free HD movies
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             }
         }
-    </style>
-</head>
-<body>
-   <!-- Header -->
-    <div class="header">
-        <h1><span>Fflix</span> - Watch Free Movies & TV Shows now </h1>
+        </style>
+        </head>
+        <body>
+        <!-- Header -->
+        <div class="header"> <h1><span>Fflix</span> - Watch Free Movies & TV Shows now </h1>
     </div> 
     <!-- About Section -->
     <div class="section">
         <h2>What Is Fflix?</h2>
-        <p>
-            Fflix is a free online streaming platform offering an extensive selection of movies and TV shows across various genres. 
+         Fflix is a free online streaming platform offering an extensive selection of movies and TV shows across various genres. 
             Designed for viewers who value 
             convenience and quality, without the need for sign-ups or subscriptions.
 <html lang="en">
