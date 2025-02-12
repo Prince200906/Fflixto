@@ -1,4 +1,3 @@
-Fflix - Enjoy free HD movies
 <html lang="en">
 <head>
     <meta charset="UTF-8">
